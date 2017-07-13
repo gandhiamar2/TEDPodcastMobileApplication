@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.gandh.hw7.MainActivity">
+
+    <include android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"/>
+
+    <ImageView
+        app:srcCompat="@drawable/icon"
+        android:id="@+id/imageView"
+        android:layout_width="89dp"
+        android:layout_height="55dp"
+        android:layout_alignBottom="@+id/tool_bar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="312dp"
+        android:layout_marginEnd="312dp" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tool_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="203dp"
+        android:id="@+id/pb1" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/seekBar" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/pause"
+        android:background="@null"
+        android:layout_above="@+id/seekBar"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/pause" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tool_bar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/rv1"
+        android:layout_above="@+id/pause" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/vert"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/click"
+        android:layout_above="@+id/rv1" />
+
+    <ImageButton
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/auto"
+        android:background="@color/colorPrimary"
+        android:id="@+id/refresh"
+        android:layout_width="60dp"
+        android:layout_above="@+id/rv1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="22dp"
+        android:layout_marginEnd="22dp"
+        android:layout_alignTop="@+id/imageView" />
+
+    <TextView
+        android:text="TED Radio Hour Podcast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/textView6"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_alignRight="@+id/pb1"
+        android:layout_alignEnd="@+id/pb1" />
+
+</RelativeLayout>
